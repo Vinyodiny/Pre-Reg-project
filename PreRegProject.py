@@ -216,7 +216,8 @@ def get_user_inputs():
 if __name__ == "__main__":
     show_loading()
     #Make sure this is changed to the correct format and is hardcoded. If not, get new and save as .json
-    credentials_file=r"C:\Users\maste\Desktop\PreregProject\civic-reserve-447800-h5-0ea4d7319ace.json"
+    print("Select the Credentials API key to run: ")
+    credentials_file=filedialog.askopenfilename(title="Select API key")
     sheet_name, day_name, template_file, output_file = get_user_inputs()
 
     print("\nImporting data from Google Sheet...")
